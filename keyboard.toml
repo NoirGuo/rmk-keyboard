@@ -75,9 +75,9 @@ name = "default"
 pin_x = "P0_29"
 pin_y = "P0_02"
 pin_z = "_"
-transform = [[80, 0], [0, 80]]
-bias = [29130, 29365]
-resolution = 6
+transform = [[1, 0], [0, 1]]
+bias = [0, 0]
+resolution = 1
 # func = "mouse | n-direction key" # TODO: only mouse is supported now
 
 # Ble configuration
