@@ -24,11 +24,6 @@
             "shortName": "BT2"
         },
         {
-            "name": "BT3",
-            "title": "Bluetooth Channel 3",
-            "shortName": "BT3"
-        },
-        {
             "name": "NEXT_BT",
             "title": "Switch to the next Bluetooth channel",
             "shortName": "Next\nBT"
