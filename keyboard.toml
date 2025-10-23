@@ -1,14 +1,11 @@
 # Documentation: https://haobogu.github.io/rmk/keyboard_configuration.html
 [keyboard]
 name = "Charybdis"
-product_name = "Charybdi"
+product_name = "Charybdis"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "Noir Guo"
 chip = "nrf52840"
-
-
-
 
 [layout]
 # WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
@@ -19,12 +16,32 @@ layers = 3
 keymap = [
     [
         ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Backspace"],
-        ["Tab", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Backslash"],
-        ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Quote"],
-        ["LShift", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "WM(Enter,RShift)"],
-        ["_", "_", "_", "_", "Space", "LT(1, Grave)", "LT(2, Delete)", "Space", "_", "_", "_", "_"]
+        ["LT(1, Tab)", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Backslash"],
+        ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Enter"],
+        ["LShift", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "RShift"],
+        ["WM(Grave,LGui)", "_", "WM(Minus,LCtrl)", "WM(Equal,LAlt)", "_", "_", "LT(1, Delete)", "_", "Space", "_", "LT(2, Quote)", "_"]
+    ],
+    [
+        ["_", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11"],
+        ["_", "_", "_", "_", "_", "_", "Home", "_", "Up", "LeftBracket", "RightBracket", "F12"],
+        ["_", "_", "_", "_", "_", "_", "End", "Left", "Down", "Right", "_", "Enter"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "PageDown", "_", "_", "_", "PageUp", "_"]
+    ],
+    [
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "RS(LeftBracket)", "RS(RightBracket)", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
     ],
 ]
+
+[rmk]
+# Maximum number of combos keyboard can store
+combo_max_num = 15
+# Maximum number of keys pressed simultaneously in a combo
+combo_max_length = 4
 
 [light]
 # All light pins are high-active by default, uncomment if you want it to be low-active
@@ -51,7 +68,6 @@ battery_adc_pin = "vddh"
 
 [split]
 connection = "ble"
-
 
 [split.central]
 rows = 5
