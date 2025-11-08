@@ -24,7 +24,7 @@ keymap = [
         ["_", "_", "_", "_", "_", "_", "Home", "_", "Up", "LeftBracket", "RightBracket", "F12"],
         ["_", "_", "_", "_", "_", "_", "End", "Left", "Down", "Right", "_", "Enter"],
         ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_", "PageDown", "_", "_", "_", "PageUp", "_"]
+        ["_", "_", "_", "_", "_", "_", "PageDown", "_", "PageUp", "_", "_", "_"]
     ],
     [
         ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
@@ -71,32 +71,32 @@ connection = "ble"
 rows = 5
 cols = 6
 row_offset = 0
-col_offset = 0
-ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
-[split.central.matrix]
-matrix_type = "normal"
-input_pins = ["P0_02", "P0_29", "P0_09", "P1_00", "P0_11", "P1_04"]
-output_pins = ["P0_31", "P1_15", "P0_24", "P0_22","P1_06"]
-row2col = true
-
-[[split.peripheral]]
-rows = 5
-cols = 6
-row_offset = 0
 col_offset = 6
 ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
-[split.peripheral.matrix]
+[split.central.matrix]
 matrix_type = "normal"
 input_pins = ["P1_04", "P0_11", "P1_00", "P0_09", "P0_17", "P0_02"]
 output_pins = ["P0_20", "P1_15", "P0_24", "P0_22","P1_06"]
 row2col = true
 # 游戏手柄摇杆
-[[split.peripheral.input_device.joystick]]
+[[split.central.input_device.joystick]]
 name = "default"
 pin_x = "P0_31"
 pin_y = "P0_29"
 pin_z = "_"
-transform = [[80, 0], [0, -80]]
-bias = [29240, 28870]
-resolution = 8
+transform = [[100, 0], [0, -100]]
+bias = [28550, 28620]
+resolution = 15
 # func = "mouse | n-direction key" # TODO: only mouse is supported now
+
+[[split.peripheral]]
+rows = 5
+cols = 6
+row_offset = 0
+col_offset = 0
+ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
+[split.peripheral.matrix]
+matrix_type = "normal"
+input_pins = ["P0_02", "P0_29", "P0_09", "P1_00", "P0_11", "P1_04"]
+output_pins = ["P0_31", "P1_15", "P0_24", "P0_22","P1_06"]
+row2col = true
