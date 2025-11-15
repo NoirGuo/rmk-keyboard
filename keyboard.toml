@@ -63,12 +63,10 @@ keymap = [
 [[input_device.encoder]]
 pin_a = "P0_10"
 pin_b = "P0_09"
-internal_pullup = false
 phase = "resolution"
-resolution = 2 # 24定位12脉冲，12*4/24=2
-# Whether the direction of the rotary encoder is reversed.
-reverse = false
-
+resolution = 2
+internal_pullup = true
+reverse =  false
 
 # 游戏手柄摇杆
 [[input_device.joystick]]
