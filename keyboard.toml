@@ -85,3 +85,9 @@ resolution = 8
 enabled = true
 # nRF52840's saadc pin for reading battery level, you can use a pin number or "vddh"
 battery_adc_pin = "vddh"
+
+[rmk]
+# Mouse key interval (ms) - controls mouse movement speed
+mouse_key_interval = 20
+# Mouse wheel interval (ms) - controls scrolling speed
+mouse_wheel_interval = 80
