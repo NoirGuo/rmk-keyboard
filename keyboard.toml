@@ -17,7 +17,7 @@ keymap = [
         ["LT(1, Tab)", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Backslash"],
         ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Enter"],
         ["LShift", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "RShift"],
-        ["_", "WM(Grave,LGui)", "_", "WM(Minus,LCtrl)", "WM(Equal,LAlt)", "_", "LT(1, Delete)", "_", "LT(2, Quote)", "_", "Space", "_"]
+        ["_", "WM(Minus,LCtrl)", "WM(Equal,LAlt)", "WM(Grave,LGui)", "_", "_", "LT(1, Delete)", "_", "LT(2, Quote)", "_", "Space", "_"]
     ],
     [
         ["_", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11"],
@@ -84,9 +84,14 @@ name = "default"
 pin_x = "P0_31"
 pin_y = "P0_29"
 pin_z = "_"
-transform = [[100, 0], [0, -100]]
-bias = [28550, 28620]
-resolution = 15
+#xbox摇杆
+transform = [[80, 0], [0, -80]]
+bias = [29240, 28870]
+resolution = 8
+#霍尔摇杆
+# transform = [[100, 0], [0, -100]]
+# bias = [28550, 28620]
+# resolution = 15
 # func = "mouse | n-direction key" # TODO: only mouse is supported now
 
 [[split.peripheral]]
