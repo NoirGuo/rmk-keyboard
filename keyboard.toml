@@ -86,7 +86,7 @@ pin_y = "P0_29"
 pin_z = "_"
 transform = [[-100, 0], [0, 100]]
 bias = [28550, 28620]
-resolution = 15
+resolution = 8
 # func = "mouse | n-direction key" # TODO: only mouse is supported now
 
 [[split.peripheral]]
