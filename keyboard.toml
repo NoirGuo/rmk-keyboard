@@ -17,7 +17,7 @@ keymap = [
         ["LT(1, Tab)", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Backslash"],
         ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Enter"],
         ["LShift", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "RShift"],
-        ["_", "_", "WM(Grave,LGui)", "WM(Equal,LAlt)", "WM(Minus,LCtrl)", "_", "LT(1, Delete)", "_", "LT(2, Quote)", "_", "Space", "_"]
+        ["_", "WM(Grave,LGui)", "WM(Equal,LAlt)", "WM(Minus,LCtrl)", "_", "_", "LT(1, Delete)", "_", "LT(2, Quote)", "_", "Space", "_"]
     ],
     [
         ["_", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11"],
