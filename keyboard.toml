@@ -85,7 +85,7 @@ pin_x = "P0_31"
 pin_y = "P0_29"
 pin_z = "_"
 #xbox摇杆
-transform = [[80, 0], [0, -80]]
+transform = [[-80, 0], [0, 80]]
 bias = [29240, 28870]
 resolution = 8
 #霍尔摇杆
