@@ -84,15 +84,10 @@ name = "default"
 pin_x = "P0_31"
 pin_y = "P0_29"
 pin_z = "_"
-#xbox摇杆
-transform = [[-80, 0], [0, 80]]
-bias = [29240, 28870]
-resolution = 8
-#霍尔摇杆
-# transform = [[100, 0], [0, -100]]
-# bias = [28550, 28620]
-# resolution = 15
-# func = "mouse | n-direction key" # TODO: only mouse is supported now
+transform = [[-100, 0], [0, 100]]
+bias = [28550, 28620]
+resolution = 15
+func = "mouse | n-direction key" # TODO: only mouse is supported now
 
 [[split.peripheral]]
 rows = 5
