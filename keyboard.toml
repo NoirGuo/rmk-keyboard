@@ -1,34 +1,31 @@
 # Documentation: https://haobogu.github.io/rmk/keyboard_configuration.html
 [keyboard]
-name = "Charybdis"
-product_name = "Charybdis"
+name = "Wingxsl"
+product_name = "Wingxsl"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "Noir Guo"
 chip = "nrf52840"
 
 [layout]
-rows = 5
+rows = 4
 cols = 12
 layers = 3
 keymap = [
     [
-        ["Escape", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Backspace"],
-        ["LT(1, Tab)", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Backslash"],
+        ["Escape", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Backslash"],
         ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Enter"],
         ["LShift", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "RShift"],
-        ["_", "WM(Minus,LCtrl)", "WM(Equal,LAlt)", "WM(Grave,LGui)", "_", "_", "LT(1, Delete)", "_", "LT(2, Quote)", "_", "Space", "_"]
+        ["_", "_", "WM(Minus,LCtrl)", "WM(Equal,LAlt)", "WM(Grave,LGui)", "Enter", "LT(1, Delete)", "Space", "LT(2, Quote)", "Backspace", "_", "_"]
     ],
     [
-        ["_", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11"],
+        ["Tab", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Backspace"],
         ["_", "_", "_", "_", "_", "_", "Home", "_", "Up", "LeftBracket", "RightBracket", "F12"],
         ["_", "_", "_", "_", "_", "_", "End", "Left", "Down", "Right", "_", "Enter"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_", "PageDown", "_", "PageUp", "_", "_", "_"]
+        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
     ],
     [
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
-        ["_", "_", "_", "_", "_", "_", "_", "_", "_", "SHIFTED(LeftBracket)", "SHIFTED(RightBracket)", "_"],
+        ["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11", "F12"],
         ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
         ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
         ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
@@ -41,28 +38,6 @@ combo_max_num = 15
 # Maximum number of keys pressed simultaneously in a combo
 combo_max_length = 4
 
-[light]
-# All light pins are high-active by default, uncomment if you want it to be low-active
-# capslock.pin = "PB2"
-# capslock.low_active = true
-# scrolllock.pin = "PA3"
-# scrolllock.low_active = true
-# Just ignore if no light pin is used for it
-# numslock.pin = "PA5"
-# numslock.low_active = true
-
-[storage]
-# Storage feature is enabled by default
-enabled = true
-# Clear storage at keyboard boot.
-# Set it to true will reset the storage(including keymap, BLE bond info, etc.) at each reboot.
-# This option is useful when testing the firmware.
-# clear_storage = true
-
-# !!! Warning: RMK uses last 2 sectors of your microcontroller's flash by default. You have to ensure that those flash space is not used.
-# If you're using a bootloader which puts itself at the end of the flast, like Adafruit_nRF52_Bootloader, RMK will break the bootloader.
-# Setting the `start_addr` manually to avoid this. See: https://haobogu.github.io/rmk/storage.html
-
 [ble]
 enabled = true
 # 电量报告
@@ -72,35 +47,25 @@ battery_adc_pin = "vddh"
 connection = "ble"
 
 [split.central]
-rows = 5
-cols = 6
-row_offset = 0
-col_offset = 6
-ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
-[split.central.matrix]
-matrix_type = "normal"
-col_pins = ["P1_04", "P0_11", "P1_00", "P0_09", "P0_17", "P0_02"]
-row_pins = ["P0_20", "P1_15", "P0_24", "P0_22","P1_06"]
-row2col = true
-# 游戏手柄摇杆
-[[split.central.input_device.joystick]]
-name = "default"
-pin_x = "P0_31"
-pin_y = "P0_29"
-pin_z = "_"
-transform = [[-100, 0], [0, 100]]
-bias = [28550, 28620]
-resolution = 15
-# func = "mouse | n-direction key" # TODO: only mouse is supported now
-
-[[split.peripheral]]
-rows = 5
+rows = 4
 cols = 6
 row_offset = 0
 col_offset = 0
+ble_addr = [0x7e, 0xfe, 0x73, 0x9e, 0x66, 0xe3]
+[split.central.matrix]
+matrix_type = "normal"
+col_pins = ["P0_10", "P1_06", "P0_29", "P0_08", "P0_06", "P0_31"]
+row_pins = ["P0_02", "P1_11", "P0_09", "P0_24"]
+# row2col = true
+
+[[split.peripheral]]
+rows = 4
+cols = 6
+row_offset = 0
+col_offset = 6
 ble_addr = [0x18, 0xe2, 0x21, 0x80, 0xc0, 0xc7]
 [split.peripheral.matrix]
 matrix_type = "normal"
-col_pins = ["P0_02", "P0_29", "P0_09", "P1_00", "P0_11", "P1_04"]
-row_pins = ["P0_31", "P1_15", "P0_24", "P0_22","P1_06"]
-row2col = true
+col_pins = ["P0_08", "P0_24", "P0_10", "P0_09", "P1_04", "P1_06"]
+row_pins = ["P1_11", "P0_02", "P0_29", "P0_31"]
+# row2col = true
