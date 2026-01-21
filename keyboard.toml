@@ -90,4 +90,4 @@ battery_adc_pin = "vddh"
 # Mouse key interval (ms) - controls mouse movement speed
 mouse_key_interval = 20
 # Mouse wheel interval (ms) - controls scrolling speed
-mouse_wheel_interval = 10
+mouse_wheel_interval = 5
