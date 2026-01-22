@@ -45,7 +45,7 @@ battery_adc_pin = "P0_04"
 adc_divider_measured = 2000    # R2 = 2MΩ = 2000kΩ
 adc_divider_total = 2820       # R1+R2 = 820kΩ+2MΩ = 2820kΩ
 default_tx_power = 0
-use_2m_phy = true
+ble_use_2m_phy = true
 
 [split]
 connection = "ble"
