@@ -35,37 +35,37 @@ LCtrl LGui LAlt Space LT(1, Space) RAlt MO(2) RCtrl
 [[layer]]
 name = "number_symbols" #optional name for the layer
 keys = """
-Grave Kc1 Kc2 Kc3 Kc4 Kc5 Transparent Minus Equal LeftBracket RightBracket Backslash
-Transparent Kc6 Kc7 Kc8 Kc9 Kc0 Transparent Transparent Transparent Semicolon Quote
-Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Slash
-Transparent Transparent Transparent Transparent Transparent Transparent Transparent Delete
+Grave Kc1 Kc2 Kc3 Kc4 Kc5 TRNS Minus Equal LeftBracket RightBracket Backslash
+TRNS Kc6 Kc7 Kc8 Kc9 Kc0 TRNS TRNS TRNS Semicolon Quote
+TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS Slash
+TRNS TRNS TRNS TRNS TRNS TRNS TRNS Delete
 """
 
 [[layer]]
 name = "navigation" #optional name for the layer
 keys = """
-Transparent Transparent PageUp Transparent Transparent Transparent Transparent Transparent Up Transparent Transparent Transparent
-Transparent Home PageDown End Transparent Transparent Transparent Left Down Right Transparent
-Transparent MediaPlayPause Transparent MediaPrevTrack MediaNextTrack AudioVolDown AudioVolUp AudioMute Transparent Transparent Transparent
-Transparent Transparent Transparent Transparent Transparent Transparent Transparent Insert 
+TRNS TRNS PageUp TRNS TRNS TRNS TRNS TRNS Up TRNS TRNS TRNS
+TRNS Home PageDown End TRNS TRNS TRNS Left Down Right TRNS
+TRNS MediaPlayPause TRNS MediaPrevTrack MediaNextTrack AudioVolDown AudioVolUp AudioMute TRNS TRNS TRNS
+TRNS TRNS TRNS TRNS TRNS TRNS TRNS Insert 
 """
 
 [[layer]]
 name = "control" #optional name for the layer
 keys = """
 CapsLock F1 F2 F3 F4 F5 F6 F7 F8 F9 F10 F11
-Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent F12
-Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent
-Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent
+TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS F12
+TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS
+TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS
 """
 
 [[layer]]
 name = "customized" #optional name for the layer
 keys = """
-Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent
-Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent
-Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent
-Transparent Transparent Transparent Transparent Transparent Transparent Transparent Transparent
+TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS
+TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS
+TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS
+TRNS TRNS TRNS TRNS TRNS TRNS TRNS TRNS
 """
 
 [ble]
