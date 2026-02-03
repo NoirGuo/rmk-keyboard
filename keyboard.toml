@@ -92,7 +92,7 @@ row2col = true
 # bias = [28550, 28620]
 # resolution = 15
 # # func = "mouse | n-direction key" # TODO: only mouse is supported now
-[[split.central.input_device.pointing]]
+[[split.central.input_device.pmw3610]]
 name = "trackball0"
 spi.instance = "bitbang0"
 spi.sck = "P0_08"
