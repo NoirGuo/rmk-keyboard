@@ -82,16 +82,32 @@ matrix_type = "normal"
 col_pins = ["P1_04", "P0_11", "P1_00", "P0_09", "P0_17", "P0_02"]
 row_pins = ["P0_20", "P1_15", "P0_24", "P0_22","P1_06"]
 row2col = true
-# 游戏手柄摇杆
-[[split.central.input_device.joystick]]
-name = "default"
-pin_x = "P0_31"
-pin_y = "P0_29"
-pin_z = "_"
-transform = [[-100, 0], [0, 100]]
-bias = [28550, 28620]
-resolution = 15
-# func = "mouse | n-direction key" # TODO: only mouse is supported now
+# # 游戏手柄摇杆
+# [[split.central.input_device.joystick]]
+# name = "default"
+# pin_x = "P0_31"
+# pin_y = "P0_29"
+# pin_z = "_"
+# transform = [[-100, 0], [0, 100]]
+# bias = [28550, 28620]
+# resolution = 15
+# # func = "mouse | n-direction key" # TODO: only mouse is supported now
+[[split.central.input_device.pmw3610]]
+name = "trackball0"
+spi.instance = "bitbang0"
+spi.sck = "P0_08"
+spi.mosi = "P0_29"
+spi.miso = "P0_29"
+spi.cs = "P0_31"
+# or spi = { instance = "bitbang0", sck = "P0_05", mosi = "P0_04", miso = "P0_04", cs = "P0_09" }
+motion = "P0_06" # Optional. If omitted, the sensor is polled.
+
+force_awake = false
+smart_mode = true
+cpi = 800
+invert_x = true
+# invert_y = true
+# swap_xy = true
 
 [[split.peripheral]]
 rows = 5
