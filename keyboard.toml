@@ -10,13 +10,13 @@ chip = "nrf52840"
 [layout]
 rows = 4
 cols = 12
-layers = 3
+layers = 5
 keymap = [
     [
         ["Escape", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Backslash"],
         ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Enter"],
         ["LShift", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "RShift"],
-        ["_", "_", "WM(Minus,LCtrl)", "WM(Equal,LAlt)", "WM(Grave,LGui)", "Enter", "LT(1, Delete)", "Space", "LT(2, Quote)", "Backspace", "_", "_"]
+        ["_", "_", "LCtrl", "WM(Equal,LAlt)", "WM(Grave,LGui)", "Enter", "LT(1, Delete)", "Space", "LT(2, Quote)", "Backspace", "_", "_"]
     ],
     [
         ["Tab", "Kc1", "Kc2", "Kc3", "Kc4", "Kc5", "Kc6", "Kc7", "Kc8", "Kc9", "Kc0", "Backspace"],
