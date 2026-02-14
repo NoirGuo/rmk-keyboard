@@ -1,7 +1,7 @@
 # Documentation: https://haobogu.github.io/rmk/keyboard_configuration.html
 [keyboard]
-name = "Pad18"
-product_name = "Pad18"
+name = "Pad24"
+product_name = "Pad24"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "Noir Guo"
@@ -9,24 +9,26 @@ chip = "nrf52840"
 
 [matrix]
 # Input and output pins are mandatory
-row_pins = ["P0_06", "P1_00", "P0_11", "P1_04", "P1_06"]
-col_pins = ["P0_17", "P0_20", "P0_22", "P0_24"]
+row_pins = ["P0_31", "P0_24", "P0_09", "P0_10", "P1_11", "P1_13"]
+col_pins = ["P0_29", "P0_02", "P1_15", "P0_22"]
 # WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
 # row2col = true
 
 [layout]
-rows = 5
+rows = 6
 cols = 4
 layers = 3
 keymap = [
     [
-        ["NumLock", "KpSlash", "KpAsterisk", "KpMinus"],
+        ["Escape", "Backspace", "Delete", "Equal"],
+        ["Tab", "KpSlash", "KpAsterisk", "KpMinus"],
         ["Kp7", "Kp8", "Kp9", "KpPlus"],
         ["Kp4", "Kp5", "Kp6", "_"],
         ["Kp1", "Kp2", "Kp3", "KpEnter"],
-        ["Kp0", "KpDot", "MouseBtn3", "Escape"]
+        ["Kp0", "_", "KpDot", "_"]
     ],
     [
+        ["_", "_","_", "_"],
         ["_", "_","_", "_"],
         ["_", "_","_", "_"],
         ["_", "_","_", "_"],
@@ -34,6 +36,7 @@ keymap = [
         ["_", "_","_", "_"]
     ],
     [
+        ["_", "_","_", "_"],
         ["_", "_","_", "_"],
         ["_", "_","_", "_"],
         ["_", "_","_", "_"],
@@ -42,42 +45,9 @@ keymap = [
     ],
 ]
 
-[light]
-# All light pins are high-active by default, uncomment if you want it to be low-active
-# capslock.pin = "PB2"
-# capslock.low_active = true
-# scrolllock.pin = "PA3"
-# scrolllock.low_active = true
-# Just ignore if no light pin is used for it
-# numslock.pin = "PA5"
-# numslock.low_active = true
-
-
-
 [storage]
 # Storage feature is enabled by default
 # enabled = false
-
-
-# 7mm鼠标编码器
-[[input_device.encoder]]
-pin_a = "P0_10"
-pin_b = "P0_09"
-phase = "resolution"
-resolution = 2
-internal_pullup = true
-reverse =  false
-
-# 游戏手柄摇杆
-[[input_device.joystick]]
-name = "default"
-pin_x = "P0_29"
-pin_y = "P0_02"
-pin_z = "_"
-transform = [[80, 0], [0, -80]]
-bias = [29240, 28870]
-resolution = 8
-# func = "mouse | n-direction key" # TODO: only mouse is supported now
 
 # Ble configuration
 [ble]
@@ -85,9 +55,4 @@ resolution = 8
 enabled = true
 # nRF52840's saadc pin for reading battery level, you can use a pin number or "vddh"
 battery_adc_pin = "vddh"
-
-[rmk]
-# Mouse key interval (ms) - controls mouse movement speed
-mouse_key_interval = 20
-# Mouse wheel interval (ms) - controls scrolling speed
-mouse_wheel_interval = 5
+default_tx_power = 8
