@@ -92,6 +92,8 @@ row2col = true
 # bias = [28550, 28620]
 # resolution = 15
 # # func = "mouse | n-direction key" # TODO: only mouse is supported now
+
+# 轨迹球
 [[split.central.input_device.pmw3610]]
 name = "trackball0"
 spi.instance = "bitbang0"
@@ -104,7 +106,7 @@ motion = "P0_06" # Optional. If omitted, the sensor is polled.
 
 force_awake = false
 smart_mode = true
-cpi = 800
+cpi = 600
 invert_x = true
 invert_y = true
 swap_xy = true
