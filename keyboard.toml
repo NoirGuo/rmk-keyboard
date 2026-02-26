@@ -105,8 +105,8 @@ motion = "P0_06" # Optional. If omitted, the sensor is polled.
 force_awake = false
 smart_mode = true
 cpi = 800
-invert_x = false
-# invert_y = true
+invert_x = true
+invert_y = true
 swap_xy = true
 
 [[split.peripheral]]
