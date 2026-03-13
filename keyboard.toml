@@ -86,3 +86,5 @@ combo_max_num = 10
 combo_max_length = 4
 # The number of available BLE profiles
 ble_profiles_num = 5
+# Default debounce time in milliseconds  
+debounce_time = 5
