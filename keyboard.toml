@@ -37,6 +37,8 @@ keymap = [
 combo_max_num = 15
 # Maximum number of keys pressed simultaneously in a combo
 combo_max_length = 4
+# Default debounce time in milliseconds  
+debounce_time = 5
 
 [host]
 # Unlock combination: simultaneous press of specified keys
