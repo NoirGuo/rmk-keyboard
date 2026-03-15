@@ -17,12 +17,12 @@ keymap = [
         ["LT(1, Tab)", "Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "Backslash"],
         ["CapsLock", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Semicolon", "Enter"],
         ["LShift", "Z", "X", "C", "V", "B", "N", "M", "Comma", "Dot", "Slash", "RShift"],
-        ["MouseBtn2", "LT(1, Grave)", "TD(0)", "TD(1)", "LAlt", "MouseBtn1", "LT(1, Quote)", "Space", "LeftBracket", "LeftBracket", "Escape", "LT(2, Delete)"],
+        ["MouseBtn2", "LT(1, Grave)", "TD(0)", "TD(1)", "MouseBtn1", "LAlt", "Space", "LT(1, Quote)", "LeftBracket", "LeftBracket", "Escape", "LT(2, Delete)"],
         ["MouseBtn3", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"]
     ],
     [
         ["_", "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9", "F10", "F11"],
-        ["_", "_", "PageUp", "_", "_", "_", "_", "_", "Up", "LeftBracket", "LeftBracket", "F12"],
+        ["_", "_", "PageUp", "_", "_", "_", "_", "_", "Up", "LeftBracket", "RightBracket", "F12"],
         ["_", "Home", "PageDown", "End", "_", "_", "_", "Left", "Down", "Right", "_", "Enter"],
         ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
         ["_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_"],
@@ -130,5 +130,5 @@ pin_a = "P0_29"
 pin_b = "P0_31"
 internal_pullup = false
 phase = "resolution"
-resolution = 2 # or 1
+resolution = 1 # or 2
 reverse = false
