@@ -136,5 +136,5 @@ pin_a = "P0_29"
 pin_b = "P0_31"
 internal_pullup = false
 phase = "resolution"
-resolution = 1 # or 2
+resolution = 2 # or 1
 reverse = false
