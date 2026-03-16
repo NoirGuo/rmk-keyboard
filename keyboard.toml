@@ -85,7 +85,7 @@ enabled = true
 enabled = true
 # 电量报告
 battery_adc_pin = "vddh"
-use_2m_phy = false
+ble_use_2m_phy = false
 
 [split]
 connection = "ble"
