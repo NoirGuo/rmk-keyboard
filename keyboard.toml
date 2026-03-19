@@ -134,7 +134,7 @@ row_pins = ["P0_10", "P1_11", "P1_13", "P1_15","P0_02","P0_24"]
 [[split.peripheral.input_device.encoder]]
 pin_a = "P0_29"
 pin_b = "P0_31"
-internal_pullup = false
+internal_pullup = true
 phase = "resolution"
 resolution = 2 # or 1
 reverse = false
