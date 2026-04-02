@@ -91,7 +91,7 @@ debounce_time = 5
 # BLE Split Central sleep timeout in seconds (0 = disabled)  
 split_central_sleep_timeout_seconds = 7200  # Set to your desired timeout
 # Macro space size in bytes for storing sequences. The maximum number of Macros depends on the size of each sequence: All sequences combined need to fit into macro_space_size, the number of macro sequences doesn't matter.
-macro_space_size = 256
+macro_space_size = 10240
 
 [host]
 # Unlock combination: simultaneous press of specified keys
