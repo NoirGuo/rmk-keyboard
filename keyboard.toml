@@ -88,6 +88,8 @@ combo_max_length = 4
 ble_profiles_num = 5
 # Default debounce time in milliseconds  
 debounce_time = 5
+# BLE Split Central sleep timeout in seconds (0 = disabled)  
+split_central_sleep_timeout_seconds = 7200  # Set to your desired timeout
 
 [host]
 # Unlock combination: simultaneous press of specified keys
