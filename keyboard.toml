@@ -12,6 +12,20 @@ col_pins = ["P1_13", "P0_02", "P0_28", "P0_03", "P1_10", "P0_24", "P0_13", "P0_2
 row_pins = ["P0_30", "P0_31", "P0_29", "P1_11"]
 # row2col = true
 
+[[input_device.encoder]]
+pin_a = "P0_09"
+pin_b = "P0_10"
+
+# Whether to use the MCU's internal pull-up resistor, default to false
+internal_pullup = true
+
+# Working mode of the encoder
+phase = "resolution"
+resolution = { detent = 12, pulse = 12 }
+
+# Whether the direction of the rotary encoder is reversed.
+reverse = false
+
 [layout]
 rows = 4
 cols = 10
@@ -31,6 +45,7 @@ A S D F G H J K L Enter
 Z X C V B N M Comma Dot RShift
 LCtrl LGui Space LT(1, Space) RAlt MO(2) RCtrl
 """
+encoders = [["AudioVolUp", "AudioVolDown"]]
 
 [[layer]]
 name = "number_symbols" #optional name for the layer
